@@ -1,0 +1,367 @@
+/* agar mengubah keseluruhan menggunakan bintang * */
+/* Jangan lupa";" agar css kalian berjalan */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
+main {
+  margin: 0 auto;
+  font-family: "Roboto", "Arial", sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+/* CSS UNTUK HEADER */
+/* 0=FALSE, 1=TRUE */
+
+header {
+  position: fixed;
+  top: 0;
+  height: 65px; 
+  width: 100%;
+  color: azure;
+  background-color: black;
+  z-index: 10;
+}
+
+/* .header-wrapper {
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+} */
+
+.header-list {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0;
+}
+
+.header-list li {
+  margin: 0;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.header-list li a {
+  text-decoration: none;
+  color:aliceblue;
+}
+
+.logo {
+  width: 25px;
+}
+
+/* search btn */
+.search-container {
+  position: relative;
+}
+
+.search-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  padding: 10px;
+  background-color: aliceblue;
+  box-shadow: 0 2px 5px red;
+}
+
+.search-dropdown input {
+  width: 100px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.search-dropdown button {
+  background-color: gold;
+  color: aliceblue;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.search-dropdown button:hover {
+  background-color: aliceblue;
+}
+
+/* Content */
+
+.contents {
+  background-color: aliceblue;
+}
+
+.image-container .iphone-12{
+  height: 640px;
+  width: 100%;
+  margin-bottom: 0px;  
+}
+
+.iphone-12 {
+  height: 100%;
+  background-image: url(img/iphone_12.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.iphone-12 .title {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.iphone-12 .title h1 {
+  font-size: 50px;
+  color: #ffd700;
+  font-weight: 700;
+}
+
+.iphone-12 .title P {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.iphone-12 .cta-links {
+  text-align: center;
+}
+
+.image-container .iphone-12-pro {
+  height: 640px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.iphone-12-pro {
+  height: 90%;
+  min-height: 100%;
+  background-image: url(img/iphone12pro-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.iphone-12-pro .title {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.iphone-12-pro .title h1{
+  font-size: 50px;
+  color: gold;
+  font-weight: 700;
+}
+
+.iphone-12-pro .title P {
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+.iphone-12-pro .cta-links {
+  text-align: center;
+}
+
+.image-container .fitness {
+  height: 500px;
+  width: 100%;
+  padding-top: 0%;
+  flex: auto;
+}
+
+.fitness {
+  height: 90%;
+  min-height: 100%;
+  background-image: url(img/apple-fitness.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 00px;
+}
+
+.fitness .cta-links {
+  text-align: center;
+}
+
+.title .hello {
+  font-size: 50px;
+  text-align: center;
+  color: gold;
+  padding-top: 50px;
+  font-weight: 700;
+}
+
+.title .A {
+  font-size: 25px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.title .cta-links {
+  text-align: center;
+}
+
+/* Main */
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+li {
+  color: white;
+  height: 770px;
+}
+ul,li {
+  margin-bottom: 5px;
+}
+.flex-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-list li {
+  flex: auto;
+  width: 50%;
+}
+.img {
+  margin: 0 auto;
+  width: 100%;
+}
+.headline {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.content {
+  overflow: hidden;
+}
+.theme-dark {
+  background-color: #000;
+  margin: 0 auto;
+}
+.theme-light {
+  background-color: #fbfbfd;
+  margin: 0 auto;
+  color: #1d1d1f;
+}
+
+.container-main {
+  width: 98%;
+  height: 100%;
+}
+
+ul li img{
+  width: 100%;
+}
+
+.cta-links a {
+  font-size: 23px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: red;
+  font-weight: normal;
+}
+
+.cta-links a:hover {
+  text-decoration: underline;
+}
+
+/* Zoom Hover Images */
+
+.unit-image figure img {
+  transition: transform .2s;
+}
+
+.unit-image figure img:hover {
+  transform: scale(1.05);
+}
+
+.apple-watch-logo {
+  width: 25%;
+}
+
+/* CSS Footer */
+
+footer {
+  background-color: gold;
+  padding: 40px;
+  height: 100px;
+  color: #1d1d1f;
+}
+
+.logo-footer {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.txt-copy {
+  margin: 0;
+
+}
+
+.txt-copy a {
+  color: #ff0000; 
+}
+
+.txt-copy a:hover {
+  text-decoration: underline;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-list {
+  float: left;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.footer-list p a {
+  color: #1d1d1f;
+}
+
+.footer-list p a:hover {
+  text-decoration: underline;
+}
+
+.clear-footer {
+  clear: left;
+}
+
+.foot-notes ul li {
+  color: #86868b;
+  height: 2em;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.footer-container, .footer-list-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Responsive */
+.menu-logo {
+  visibility: hidden;
+  position: absolute;
+}
+
+.fe-search {
+  visibility: hidden;
+}
